@@ -1,8 +1,5 @@
 package com.valentine.samples;
 
-import com.valentine.example.Request;
-import com.valentine.example.RequestProcessor;
-
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class SaveProcessor extends Thread implements RequestProcessor{

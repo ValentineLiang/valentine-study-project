@@ -1,9 +1,5 @@
 package com.valentine.samples;
 
-import com.valentine.example.PrintProcessor;
-import com.valentine.example.Request;
-import com.valentine.example.SaveProcessor;
-
 public class Demo {
     PrintProcessor printProcessor;
 

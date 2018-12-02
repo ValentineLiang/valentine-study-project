@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ThreadInterruptDemo {
 
-    public static void main1(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         Thread thred=new Thread(()->{
             while(true){
@@ -24,12 +24,12 @@ public class ThreadInterruptDemo {
         thred.interrupt();
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main1(String[] args) throws InterruptedException {
         Thread thread=new Thread(()->{
             while(true){
                 // 抛异常会复位
                 try {
-                    Thread.sleep(1000000000);
+                    Thread.sleep(100000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -37,10 +37,11 @@ public class ThreadInterruptDemo {
         });
         thread.start();
         TimeUnit.SECONDS.sleep(1);
+        // 设置复位表示为true
         thread.interrupt();
-        System.out.println("before:"+thread.isInterrupted());
         TimeUnit.SECONDS.sleep(1);
-        System.out.println("after:"+thread.isInterrupted());
+        // 输出false
+        System.out.println(thread.isInterrupted());
     }
 //   volatile boolean stop=true;
 

@@ -16,10 +16,8 @@ public class InterruptDemo {
         },"interruptDemo");
         thread.start();
         TimeUnit.SECONDS.sleep(1);
-        //设置interrupt标识为true
+        //设置interrupt标识为true（提供一个钩子）
         thread.interrupt();
         System.out.println(thread.isInterrupted());
     }
-
-
 }

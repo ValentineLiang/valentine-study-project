@@ -14,6 +14,7 @@ public class Test {
                 }*/
             }
         });
+
         thread.start();
         TimeUnit.SECONDS.sleep(1);
         //设置复位标识为 true

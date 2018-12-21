@@ -17,11 +17,21 @@ public class CountDownLatchDemo {
         },"1").start();
 
         new Thread(()->{
+            try {
+                Thread.sleep(20000000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             countDownLatch.countDown();
         },"2").start();
 
         new Thread(()->{
             countDownLatch.countDown();
+            try {
+                Thread.sleep(20000000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         },"3").start();
 
         // 阻塞主线程

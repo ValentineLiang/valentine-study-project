@@ -1,6 +1,7 @@
 package com.valentine.volatiledemo;
 
 public class ThreadNotify extends Thread {
+
     private final Object lock;
 
     ThreadNotify(Object lock) {

@@ -1,6 +1,7 @@
 package com.valentine.volatiledemo;
 
 public class ThreadWait extends Thread {
+
     private final Object lock;
 
     ThreadWait(Object lock) {

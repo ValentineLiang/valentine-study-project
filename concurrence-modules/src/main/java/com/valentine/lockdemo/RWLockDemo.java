@@ -10,7 +10,7 @@ public class RWLockDemo {
     /**
      * 共享锁-在同一时刻可以有多个线程获得锁，读锁和写锁（读多写少）
      */
-    private static Map<String,Object> cacheMap = new HashMap<>();
+    private static Map<String, Object> cacheMap = new HashMap<>();
 
     private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
 
@@ -19,14 +19,14 @@ public class RWLockDemo {
 
     /**
      * 使用读写锁可以更大化地提升性能（在读多写少的情况下）
-     *
+     * <p>
      * 读锁，可以允许多个线程进入
      */
     public static Object get(String key) {
         read.lock();
         try {
             return cacheMap.get(key);
-        }finally {
+        } finally {
             read.unlock();
         }
     }
@@ -38,8 +38,8 @@ public class RWLockDemo {
         // 写锁
         write.lock();
         try {
-            return cacheMap.put(key,value);
-        }finally {
+            return cacheMap.put(key, value);
+        } finally {
             write.unlock();
         }
     }

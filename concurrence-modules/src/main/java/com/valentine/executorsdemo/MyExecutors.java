@@ -6,6 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadFactory;
@@ -19,6 +20,8 @@ import java.util.concurrent.TimeUnit;
  * @since 2018/12/24 22:35
  */
 public class MyExecutors extends ThreadPoolExecutor {
+
+
 
     // beforeExecutor、afterExecutor、shutdown 可以每次执行完上报数据或者执行前上报数据，例如存到mongo里面
 
@@ -64,6 +67,8 @@ public class MyExecutors extends ThreadPoolExecutor {
         startTime.put(String.valueOf(r.hashCode()), new Date());
 
         super.beforeExecute(t, r);
+
+
     }
 
     /**

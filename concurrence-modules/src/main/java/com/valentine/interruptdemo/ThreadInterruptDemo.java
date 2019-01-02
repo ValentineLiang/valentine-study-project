@@ -1,4 +1,4 @@
-package com.valentine.samples;
+package com.valentine.interruptdemo;
 
 import java.util.concurrent.TimeUnit;
 
@@ -43,6 +43,5 @@ public class ThreadInterruptDemo {
         // 输出false
         System.out.println(thread.isInterrupted());
     }
-//   volatile boolean stop=true;
 
 }

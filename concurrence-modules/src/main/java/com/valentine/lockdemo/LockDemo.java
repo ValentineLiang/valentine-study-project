@@ -1,7 +1,5 @@
 package com.valentine.lockdemo;
 
-import com.valentine.samples.AtomicDemo;
-
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 

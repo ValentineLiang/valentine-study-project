@@ -1,4 +1,4 @@
-package com.valentine.samples;
+package com.valentine.interruptdemo;
 
 import lombok.Data;
 

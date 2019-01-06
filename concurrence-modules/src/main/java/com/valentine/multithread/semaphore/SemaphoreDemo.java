@@ -1,4 +1,4 @@
-package com.valentine.semaphore;
+package com.valentine.multithread.semaphore;
 
 import java.util.concurrent.Semaphore;
 

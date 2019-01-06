@@ -1,4 +1,4 @@
-package com.valentine.volatiledemo;
+package com.valentine.multithread.volatiledemo;
 
 public class ThreadNotify extends Thread {
 

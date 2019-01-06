@@ -1,4 +1,4 @@
-package com.valentine.synchronizeddemo;
+package com.valentine.multithread.synchronizeddemo;
 
 public class Demo {
     private static int count = 0;

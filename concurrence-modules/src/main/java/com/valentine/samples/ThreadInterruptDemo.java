@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ThreadInterruptDemo {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main1(String[] args) throws InterruptedException {
 
         Thread thred=new Thread(()->{
             while(true){
@@ -24,7 +24,7 @@ public class ThreadInterruptDemo {
         thred.interrupt();
     }
 
-    public static void main1(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread=new Thread(()->{
             while(true){
                 // 抛异常会复位
@@ -43,6 +43,4 @@ public class ThreadInterruptDemo {
         // 输出false
         System.out.println(thread.isInterrupted());
     }
-//   volatile boolean stop=true;
-
 }

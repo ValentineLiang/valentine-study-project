@@ -1,4 +1,4 @@
-package com.valentine.samples;
+package com.valentine.multithread.volatiledemo;
 
 import java.util.concurrent.TimeUnit;
 

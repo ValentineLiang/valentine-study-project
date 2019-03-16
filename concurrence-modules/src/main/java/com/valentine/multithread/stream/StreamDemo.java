@@ -1,4 +1,4 @@
-package com.valentine.stream;
+package com.valentine.multithread.stream;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.valentine.volatiledemo;
+package com.valentine.multithread.volatiledemo;
 
 public class ThreadDemo {
     // 加了volatile的时候会有一个加锁的操作： 0x03060356: lock addl $0x0,(%esp)

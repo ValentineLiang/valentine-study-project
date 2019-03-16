@@ -1,4 +1,4 @@
-package com.valentine.samples;
+package com.valentine.interruptdemo;
 
 /**
  * 原子性问题
@@ -21,7 +21,7 @@ public class AtomicDemo {
             new Thread(AtomicDemo::inc).start();
         }
         Thread.sleep(4000);
-        System.out.println("y运行结果："+count);
+        System.out.println("运行结果："+count);
     }
 
 }

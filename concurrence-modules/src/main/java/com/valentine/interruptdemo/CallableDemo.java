@@ -1,4 +1,4 @@
-package com.valentine.samples;
+package com.valentine.interruptdemo;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

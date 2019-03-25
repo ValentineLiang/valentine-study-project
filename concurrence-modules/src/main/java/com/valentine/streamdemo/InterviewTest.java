@@ -1,4 +1,4 @@
-package com.valentine.stream;
+package com.valentine.streamdemo;
 
 public class InterviewTest {
     public static void main(String[] args) {

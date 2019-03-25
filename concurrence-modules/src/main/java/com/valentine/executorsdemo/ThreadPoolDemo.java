@@ -8,10 +8,14 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @since 2018/12/24 22:54
  */
 public class ThreadPoolDemo implements Runnable{
-
-    private static  ExecutorService executorService = MyExecutors.newMyExecutors();
-
     @Override
+    public void run() {
+
+    }
+
+//    private static  ExecutorService executorService = MyExecutors.newMyExecutors();
+
+    /*@Override
     public void run() {
         try {
             Thread.sleep(1000);
@@ -27,6 +31,6 @@ public class ThreadPoolDemo implements Runnable{
             executorService.execute(new ThreadPoolDemo());
         }
         executorService.shutdown();
-    }
+    }*/
 
 }

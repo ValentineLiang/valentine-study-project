@@ -1,4 +1,4 @@
-package com.valentine.atomicInteger;
+package com.valentine.atomicIntegerdemo;
 
 /**
  * @author Valentine

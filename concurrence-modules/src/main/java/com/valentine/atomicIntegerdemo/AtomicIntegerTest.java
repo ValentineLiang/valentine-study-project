@@ -1,4 +1,4 @@
-package com.valentine.atomicInteger;
+package com.valentine.atomicIntegerdemo;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
